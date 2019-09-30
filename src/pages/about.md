@@ -1,7 +1,7 @@
 ---
 title: About Me
 subtitle: ''
-img_path: /images/potw2019-01-28-25edit.jpg
+img_path: /images/intro.jpg
 menus:
   main:
     title: About
