@@ -36,4 +36,4 @@ Based on whatever algorithm is used by the reverse proxy server, it selects the 
 
 
 
-_P.S. A blog post will be coming up about Nginx and how to set it up with Node.js. Stay tuned!_
+_**P.S.** A blog post will be coming up about Nginx and how to set it up with Node.js. Stay tuned!_
