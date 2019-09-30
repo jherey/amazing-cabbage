@@ -1,5 +1,5 @@
 ---
-title: Proxy vs Reverse Proxy
+title: Proxy and Reverse Proxy
 date: 2019-09-30T13:49:39.133Z
 thumb_img_path: /images/proxy.jpg
 template: post
