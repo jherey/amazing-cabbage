@@ -23,7 +23,7 @@ In programming, a proxy hides the identity of the client. The server does not kn
 
 Reverse proxy on the other hand, the client doesn't know which server it is connecting to.
 
-Based on whatever algorithm is used by the reverse proxy server, it selects the server to get the data from. A common algorithm is the Round Robin Algorithm (just loop through the available servers and direct requests to each individual server). These activities are internal to the system and the client won't need to bother which server is returning the data.
+Based on whatever algorithm is used by the reverse proxy server, it selects the server to get the data from. A common algorithm is the Round Robin Algorithm (just loop through the available servers and direct requests to each individual server). These activities are internal to the system and the client won't need to bother which server is returning the data or in fact how many servers there are.
 
 ![](/images/reverse_proxy.png)
 
@@ -33,4 +33,4 @@ Based on whatever algorithm is used by the reverse proxy server, it selects the 
 * **Canary deployment:** this involves running multiple versions of your app and routing specific users to those versions. This is very helpful when pushing out big changes to users.
 * **Caching:** this is a complex architecture to accomplish as it must be done with care, else clients get outdated data. A simple technique used is time-based caching.
 * **Isolating Internal Traffic:** the servers can be configured to run containers, virtual machines, different ports, etc, no one really cares. It completely isolates the backend logic from the users. The ports can be made to run only internally and not expose them to the outside world, it makes deployment of servers very flexible.
-* **Security**
+* **Security:** SSL certificates can be added to a reverse proxy to secure applications against vulnerabilities and attacks. In practice, they're changed every 30 or 60 days.
