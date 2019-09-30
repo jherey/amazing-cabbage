@@ -8,16 +8,19 @@ template: post
 
 # **Proxy or Forward Proxy**
 
-In programming, _forward proxy_, often referred to as a _proxy_ hides the identity of the client. The server does not know who the client is. A good example of proxies are ISPs (Internet Service Providers), when you make a request to "google.com", it gets to your ISP and your ISP sends the request to get the data, the server won't know who the client is or where the client is making the request from.
+In programming, _forward proxy_, often referred to as a _proxy_ hides the identity of the client. The server does not know who the client is. A proxy sits as a middleman between the client and the server.
+
+A good example of proxies are ISPs (Internet Service Providers), when you make a request to "google.com", it gets to your ISP and your ISP sends the request to get the data, the server won't know who the client is or where the client is making the request from.
 
 ![](/images/screenshot-2019-09-30-at-4.14.07-pm.png)
 
 ## Advantages of a Proxy Server
 
-* Blocking unwanted sites: ISPs use this to block some sites from being reached. This is used by the government and companies to block websites.
-* Anonymity: the server cannot know who's making the requests.
-* Caching: this can help performance as static files can be cached and sent back to clients when needed much faster.
-* Geofencing: 
+* **Blocking unwanted sites:** ISPs use this to block some sites from being reached. This is used by the government and companies to block websites they don't want people to access. 
+* **Anonymity:** the server cannot know who's making the requests.
+* **Caching:** this can help performance as static files can be cached and sent back to clients when needed much faster.
+
+
 
 # Reverse Proxy
 
