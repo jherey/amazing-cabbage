@@ -3,21 +3,15 @@
   "layout_style": "overflow",
   "palette": "blue",
   "header": {
-    "title": "Stackbit Fresh",
-    "tagline": "Header Tagline",
-    "profile_img": "images/avatar.png",
+    "title": "Jeremiah Olufayo",
+    "tagline": "Software Developer | Odd Thinker | !Nerd",
+    "profile_img": "/images/intro.jpg",
     "bg": "dark",
     "has_nav": true,
     "has_social": true
   },
   "footer": {
-    "content": "&copy; Stackbit-Fresh. All rights reserved.",
-    "links": [
-      {
-        "text": "Made with Stackbit",
-        "url": "https://www.stackbit.com",
-        "new_window": true
-      }
-    ]
+    "content": "&copy; Jeremiah Olufayo. All rights reserved.",
+    "links": []
   }
 }
