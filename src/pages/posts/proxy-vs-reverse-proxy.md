@@ -8,7 +8,7 @@ template: post
 
 # **Proxy or Forward Proxy**
 
-In programming, a proxy hides the identity of the client. The server does not know who the client is. A good example of proxies are ISPs (Internet Service Providers), when you make a request to "google.com", it gets to your ISP and your ISP sends the request to get the data, the server won't know who the client is or where the client is making the request from. It is mostly used to provide for load balancing.
+In programming, _forward proxy_, often referred to as a _proxy_ hides the identity of the client. The server does not know who the client is. A good example of proxies are ISPs (Internet Service Providers), when you make a request to "google.com", it gets to your ISP and your ISP sends the request to get the data, the server won't know who the client is or where the client is making the request from.
 
 ![](/images/screenshot-2019-09-30-at-4.14.07-pm.png)
 
@@ -21,7 +21,7 @@ In programming, a proxy hides the identity of the client. The server does not kn
 
 # Reverse Proxy
 
-On the other hand, the client doesn't know which server it is connecting to or getting data from in reverse proxy.
+On the other hand, the client doesn't know which server it is connecting to or getting data from in reverse proxy. It is mostly used to provide for load balancing and high reliability.
 
 Based on whatever algorithm is used by the reverse proxy server, it selects the server to get the data from. A common algorithm is the Round Robin Algorithm (just loop through the available servers and direct requests to each individual server). These activities are internal to the system and the client won't need to bother which server is returning the data or in fact how many servers there are.
 
