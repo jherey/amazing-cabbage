@@ -4,7 +4,7 @@ date: 2019-09-30T13:49:39.133Z
 thumb_img_path: /images/proxy.jpg
 template: post
 ---
-> From the Oxford Dictionary, the word "proxy" means the authority to represent someone else.
+> _From the Oxford Dictionary, the word "proxy" means the authority to represent someone else._
 
 # **Proxy or Forward Proxy**
 
