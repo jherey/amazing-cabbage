@@ -6,7 +6,7 @@ template: post
 ---
 If you're one of many software developers that have come across _"ssh into a server"_ and have no idea what that means, then this post is for you. I think other people have this experience where you'll be reading a tutorial or watching a series and the tutor tells you to SSH into your remote server and I'm like _"what does that even mean?"_, people just assume you know it. You'll be absolutely correct if you guessed that was the end of the tutorial for me. 
 
-This post will try to explain what it means and why you should use it. I'll try to keep this as simple as possible so anyone can read this and get a little grasp about what SSH means. I'll like to state that if you're looking for a deep explanation of SSH, then this post isn't for you. 
+This post will try to explain what it means and why you should use it. I'll try to keep this as simple as possible so anyone can read this and get a little grasp of what SSH means. I'll like to state that if you're looking for a deep explanation of SSH, then this post isn't for you. 
 
 
 
