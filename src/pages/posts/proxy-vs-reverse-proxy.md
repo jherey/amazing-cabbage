@@ -10,7 +10,7 @@ template: post
 
 In programming, _forward proxy_, often referred to as a _proxy_ hides the identity of the client. The server does not know who the client is. A proxy sits in front of one or more clients, get requests and communicates with the server.
 
-A good example of proxies are ISPs (Internet Service Providers), when you make a request to "google.com", it gets to your ISP and your ISP sends the request to get the data, the server won't know who the client is or where the client is making the request from.
+A good example of proxies are ISPs (Internet Service Providers), when you make a request to _"google.com"_, it gets to your ISP and your ISP sends the request to get the data, the server won't know who the client is or where the client is making the request from.
 
 ![](/images/screenshot-2019-09-30-at-4.14.07-pm.png)
 
