@@ -12,6 +12,8 @@ This tutorial will try to explain what it means and why you should use it. I'll 
 
 SSH stands for Secure Shell (Protocol). It's a network protocol (set of rules) to achieve secure login from one computer to another (server) over an unsecured network. It enables network administrators or developers to execute shell commands on their server directly from your local computer. SSH uses the Transmission Control Protocol (TCP). TCP simply means a connection stays alive until both applications have finished exchanging data or message requests. SSH can transmit data, commands and files.
 
+Connections can be secured with a password or an asymmetrical key system i.e using private and public keys.
+
 \* Screenshot sshing into a server.
 
 There are two parts of an SSH key:
@@ -38,5 +40,6 @@ On Mac and Linux, ssh is pre-installed but on Windows, you'll have to install an
 * Secure File Transfer: ssh allows you copy files from your server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
 * Same linux commands: you don't have to cram different set of commands. One can run commands easily on your remote server like it's a local one.
 * Secure or confidential user access: a client can be assured of secured connection to a remote server even in an unsecured network.
+* Non-platform agnostic: it can be used on any major OS platform like Linux, Windows and Mac.
 
 In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, algorithm used, etc. I know many of you are anxious saying "Jerry enough of the sermon, I want to get my hands dirty". I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and "sshing" into a Digital Ocean droplet.
