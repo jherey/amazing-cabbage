@@ -21,7 +21,7 @@ There are two parts of an SSH key:
 1. **_Private key:_** it is very important that this is kept a secret, it should never leave your computer. A good way to keep this safe is by using a passphrase on the private key. The private key is used to decipher the public key.
 2. **_Public key:_** as the name implies, this is the key you copy to remote servers. The public key can only be deciphered by the private key associated with it.
 
-From cloud services like AWS, GCP, Digital Ocean to git versioning systems like GitHub and Gitlab, ssh keys can be added to them for secured connection to deploy or push code.
+From cloud services like AWS, GCP, Digital Ocean to git versioning systems like GitHub and Gitlab, ssh keys can be added to them for secured connection to deploy your applications or push your code.
 
 
 
