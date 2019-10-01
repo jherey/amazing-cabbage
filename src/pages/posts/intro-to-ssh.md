@@ -14,12 +14,10 @@ SSH stands for Secure Shell (Protocol). It's a network protocol (set of rules) t
 
 Connections can be secured with password authentication or an asymmetrical key system i.e using private and public keys.
 
-\* Screenshot sshing into a server.
-
 There are two parts of an SSH key:
 
-1. Private key: it is very important that this is kept secret, it should never leave your computer. A good way to keep this safe is using a passphrase on the private key. The private key is used to decipher the public key.
-2. Public key: as the name implies, this can be put anywhere. This is basically the key you put on remote servers like Digital Ocean, GitHub, AWS, etc so it knows who is talking to. The public key can only be unlocked by the private key.
+1. **_Private key:_** it is very important that this is kept secret, it should never leave your computer. A good way to keep this safe is using a passphrase on the private key. The private key is used to decipher the public key.
+2. **_Public key:_** as the name implies, this can be put anywhere. This is basically the key you put on remote servers like Digital Ocean, GitHub, AWS, etc so it knows who is talking to. The public key can only be unlocked by the private key.
 
 
 
@@ -49,7 +47,7 @@ ssh-keygen
 
 ## How it works?
 
-This will be a high level explanation of how authentication works with SSH.
+This will be a high level explanation of how SSH connections work.
 
 ![how ssh works image](/images/how_ssh_works.png)
 
@@ -90,9 +88,9 @@ e.g ssh mysite.com ls tmp
 
 ## Why use SSH?
 
-* Secure File Transfer: ssh allows you copy files from your server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
-* Same linux commands: you don't have to cram different set of commands. One can run commands easily on your remote server like it's a local one.
+* _**Secure File Transfer:**_ ssh allows you copy files from your server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
+* **_Same linux commands:_** you don't have to cram different set of commands. One can run commands easily on your remote server like it's a local one.
 * Secure or confidential user access: a client can be assured of secured connection to a remote server even in an unsecured network.
-* Non-platform agnostic: it can be used on any major OS platform like Linux, Windows and Mac.
+* **_Non-platform agnostic:_** it can be used on any major OS platform like Linux, Windows and Mac.
 
 In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, algorithm used, etc. I know many of you are anxious saying "Jerry enough of the sermon, I want to get my hands dirty". I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and "sshing" into a Digital Ocean droplet.
