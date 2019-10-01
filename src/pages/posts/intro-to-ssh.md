@@ -12,22 +12,24 @@ This tutorial will try to explain what it means and why you should use it. I'll 
 
 SSH stands for Secure Shell (Protocol). It's a network protocol (set of rules) to achieve secure login from one computer to another (server) over an unsecured network. It enables network administrators or developers to execute shell commands on their server directly from your local computer. SSH uses the Transmission Control Protocol (TCP). TCP simply means a connection stays alive until both applications have finished exchanging data or message requests. SSH can transmit data, commands and files.
 
-Connections can be secured with a password or an asymmetrical key system i.e using private and public keys.
+Connections can be secured with password authentication or an asymmetrical key system i.e using private and public keys.
 
 \* Screenshot sshing into a server.
 
 There are two parts of an SSH key:
 
-1. Private key: it is very important that this is kept secret, it should never leave your computer. A good way to keep this safe is using a passphrase on the private key.
+1. Private key: it is very important that this is kept secret, it should never leave your computer. A good way to keep this safe is using a passphrase on the private key. The private key is used to decipher the public key.
 2. Public key: as the name implies, this can be put anywhere. This is basically the key you put on remote servers like Digital Ocean, GitHub, AWS, etc so it knows who is talking to. The public key can only be unlocked by the private key.
 
 
 
 ## How to get your SSH Key?
 
-On Mac and Linux, ssh is pre-installed but on Windows, you'll have to install an ssh client like [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). 
+On Mac and Linux, ssh is pre-installed into the terminal but on Windows, you'll have to install a third party ssh client like [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). 
 
 ## How it works?
+
+![](/images/how_ssh_works.png)
 
 1. The client sends a request with the public keys it has to a server.
 
