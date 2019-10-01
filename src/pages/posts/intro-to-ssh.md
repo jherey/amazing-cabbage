@@ -29,11 +29,15 @@ On Mac and Linux, ssh is pre-installed into the terminal but on Windows, you'll 
 
 ## How it works?
 
+This will be a high level explanation of how authentication works with SSH.
+
 ![](/images/how_ssh_works.png)
 
-1. The client sends a request with the public keys it has to a server.
+* The client sends a request (initiates a TCP connection) to a server using an IP address or public domain.
+* Server responds with the public key it has so the client, having the private key can verify it's the intended host.
+* If successfully verified, connection is established. 
 
-2. 
+
 
 ## Basic SSH Commands
 
