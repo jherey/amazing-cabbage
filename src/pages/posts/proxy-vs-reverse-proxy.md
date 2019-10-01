@@ -24,14 +24,14 @@ A good example of proxies are ISPs (Internet Service Providers), when you make a
 
 On the other hand, reverse proxy ensures that the client doesn't know which server it is connecting to or getting data from. It is mostly used to provide load balancing and high reliability. A reverse proxy server sits in front of one or more web servers.
 
-Based on whatever algorithm is used by the reverse proxy server, it selects the server to get the data from. A common algorithm is the Round Robin Algorithm (just loop through the available servers and direct requests to each individual server one after the other). These activities are internal to the system and the client won't need to bother which server is returning the data or in fact how many servers there are.
+Based on whatever algorithm is used by the reverse proxy server, it selects the server to get the data from. A common algorithm is the Round Robin Algorithm (just loop through the available servers and direct requests to each individual server one after the other, each process is provided a fixed time to execute). These activities are internal to the system and the client won't need to bother which server is returning the data or in fact how many servers there are.
 
 ![](/images/reverse_proxy.png)
 
 * **Load Balancing:** a big advantage of using reverse proxies is load balancing requests to different servers. This is really important in today's world where speed and performance are in the forefront of software development.
-* **Canary deployment:** this involves running multiple versions of your app and routing specific users to those versions. This is very helpful when pushing out big changes to users.
+* **Canary deployment:** this involves running multiple versions of your app and routing specific users to different versions. This is very helpful when pushing out big changes to users.
 * **Caching:** this is a complex architecture to accomplish as it must be done with care, else clients get outdated data. A simple technique used is time-based caching.
-* **Isolating Internal Traffic:** the servers can be configured to run containers, virtual machines, different ports, etc, no one really cares. It completely isolates the backend logic from the users. The ports can be made to run only internally and not expose them to the outside world, it makes deployment of servers very flexible.
+* **Isolating Internal Traffic:** the servers can be configured to run containers, virtual machines, different ports, etc, no one really cares. It completely isolates the internal network from the clients. The ports can be made to run only internally and not expose them to the outside world, it makes deployment of servers very flexible.
 * **Security:** SSL certificates can be added to a reverse proxy to secure applications against vulnerabilities and attacks. In practice, they're changed every 30 or 60 days.
 
 
