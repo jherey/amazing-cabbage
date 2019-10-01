@@ -51,7 +51,7 @@ ssh-keygen
 
 This will be a high level explanation of how authentication works with SSH.
 
-![](/images/how_ssh_works.png)
+![how ssh works image](/images/how_ssh_works.png)
 
 * The client sends a request (initiates a TCP connection) to a server using an IP address or public domain.
 * Server responds with the public key it has so the client, having the private key can verify it's the intended host.
@@ -60,6 +60,33 @@ This will be a high level explanation of how authentication works with SSH.
 
 
 ## Basic SSH Commands
+
+* To connect to a server
+
+
+```
+ssh user@serverip
+```
+
+* Creates an ssh key pair for authentication
+
+
+```
+ssh-keygen
+```
+
+* For running terminal commands:
+
+
+```
+ssh hostname command
+```
+
+```
+e.g ssh mysite.com ls tmp
+```
+
+
 
 ## Why use SSH?
 
