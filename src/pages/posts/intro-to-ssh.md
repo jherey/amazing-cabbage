@@ -27,6 +27,27 @@ There are two parts of an SSH key:
 
 On Mac and Linux, ssh is pre-installed into the terminal but on Windows, you'll have to install a third party ssh client like [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). 
 
+* Mac: to get your ssh key, open your terminal and run:
+
+
+```
+cat ~/.ssh/id_rsa.pub 
+```
+
+If you don't know the location of your key, run:
+
+```
+ssh-agent sh -c 'ssh-add; ssh-add -L'
+```
+
+If no key is returned, you'll have to generate new keys using:
+
+```
+ssh-keygen
+```
+
+* Windows: 
+
 ## How it works?
 
 This will be a high level explanation of how authentication works with SSH.
