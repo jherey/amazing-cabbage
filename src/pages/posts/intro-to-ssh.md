@@ -25,7 +25,7 @@ There are two parts of an SSH key:
 
 ## How to get your SSH Key?
 
-On Mac and Linux, ssh is pre-installed into the terminal but on Windows, you'll have to install a third party ssh client like [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). 
+On Mac and Linux, ssh is pre-installed into the terminal but on Windows, you'll have to install a third-party ssh client like [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). 
 
 To get your ssh key, open your terminal and run:
 
@@ -39,7 +39,7 @@ If you don't know the location of your key, run:
 ssh-agent sh -c 'ssh-add; ssh-add -L'
 ```
 
-If no key is returned, you'll have to generate new keys using:
+If no key is returned, generate new a new key using:
 
 ```
 ssh-keygen
@@ -54,10 +54,10 @@ This will be a high level explanation of how SSH connections work.
 ![how ssh works image](/images/how_ssh_works.png)
 
 * The client sends a request (initiates a TCP connection) to a server using an IP address or public domain (website address).
-* Server responds with the public key it has so the client, having the private key can verify it's the intended host.
-* If successfully verified, connection is established. 
+* The server responds with the public key it has so the client, having the private key can verify it's the intended host.
+* If successfully verified, a connection is established. 
 
-The ssh agent handles all of the authentication and the app making the request doesn't bother about it. 
+The ssh-agent handles all of the authentication and the app making the request doesn't bother about it. 
 
 
 
@@ -92,9 +92,9 @@ e.g ssh mysite.com ls <folder_name>
 
 ## Why use SSH?
 
-* _**Secure File Transfer:**_ ssh allows you copy files from your server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
-* **_Same linux commands:_** you don't have to cram different set of commands. One can run commands easily on your remote server like it's a local one.
-* **Secure or confidential user access:** a client can be assured of secured connection to a remote server even in an unsecured network.
-* **_Non-platform agnostic:_** it can be used on any major OS platform like Linux, Windows and Mac.
+* _**Secure File Transfer:**_ ssh allows file copying from a server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
+* **_Linux commands:_** you don't have to cram different sets of commands. One can run commands easily on your remote server like it's a local one.
+* **Secure or confidential user access:** a client can be assured of a secured connection to a remote server even in an unsecured network.
+* **_Non-platform agnostic:_** it can be used on any major OS platform like Linux, Windows, and Mac.
 
-In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, algorithm used, etc. I know many of you are anxious saying _"Jerry, enough of the sermon, I want to get my hands dirty"_. I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and _"sshing"_ into a Digital Ocean droplet.
+In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, the algorithm used, etc. I know many of you are anxious saying _"Jerry, enough of the sermon, I want to get my hands dirty"_. I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and _"sshing"_ into a Digital Ocean droplet.
