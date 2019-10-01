@@ -1,7 +1,7 @@
 ---
 title: Proxy and Reverse Proxy
 date: 2019-09-30T13:49:39.133Z
-thumb_img_path: /images/proxy.jpg
+thumb_img_path: /images/proxy_featured_image.png
 template: post
 ---
 > _From the Oxford Dictionary, the word "proxy" means the authority to represent someone else._
