@@ -8,7 +8,7 @@ template: post
 
 # **Proxy or Forward Proxy**
 
-In programming, _forward proxy_, often referred to as a _proxy_ hides the identity of the client. The server does not know who the client is. A proxy sits in front of one or more clients, get requests and communicates with the server.
+In programming, _forward proxy_ often referred to as a _proxy_ hides the identity of the client. The server does not know who the client is. A proxy sits in front of one or more clients, get requests and communicates with the server.
 
 A good example of proxies are ISPs (Internet Service Providers), when you make a request to _"google.com"_, it gets to your ISP and your ISP sends the request to get the data, the server won't know who the client is or where the client is making the request from.
 
@@ -17,7 +17,7 @@ A good example of proxies are ISPs (Internet Service Providers), when you make a
 ## **Uses of Proxy**
 
 * **Blocking unwanted sites:** ISPs use this to block some sites from being reached. This is used by the government and companies to block websites they don't want people to access. 
-* **Anonymity:** the server cannot know who's making the requests.
+* **Anonymity:** the server cannot know who is making the requests.
 * **Caching:** this can help performance as static files like HTML and CSS can be cached and sent back to clients when needed much faster.
 
 # Reverse Proxy
@@ -32,7 +32,7 @@ Based on whatever algorithm is used by the reverse proxy server, it selects the 
 
 ## **Uses of Reverse Proxy**
 
-* **Load Balancing:** a big advantage of using reverse proxies is load balancing requests to different servers. This is really important in today's world where speed and performance are in the forefront of software development.
+* **Load Balancing:** a big advantage of using reverse proxies is load balancing requests to different servers. This is really important in today's world where speed and performance are at the forefront of software development.
 * **Canary deployment:** this involves running multiple versions of your app and routing specific users to different versions. This is very helpful when pushing out big changes to users.
 * **Caching:** this is a complex architecture to accomplish as it must be done with care, else clients get outdated data. A simple technique used is time-based caching.
 * **Isolating Internal Traffic:** the servers can be configured to run containers, virtual machines, different ports, etc, no one really cares. It completely isolates the internal network from the clients. The ports can be made to run only internally and not expose them to the outside world, it makes deployment of servers very flexible.
