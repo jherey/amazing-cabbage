@@ -95,6 +95,6 @@ e.g ssh mysite.com ls <folder_name>
 * _**Secure File Transfer:**_ ssh allows file copying from a server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
 * **_Linux commands:_** you don't have to cram different sets of commands. One can run commands easily on your remote server like it's a local one.
 * **Secure or confidential user access:** a client can be assured of a secured connection to a remote server even in an unsecured network.
-* **_Multiple platform support:_** it can be used on any major OS platform like Linux, Windows, and Mac.
+* **_Multiple platform support:_** it can be used on any major OS platforms like Linux, Windows, and Mac.
 
 In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, the algorithm used, etc. I know many of you are anxious saying _"Jerry, enough of the sermon, I want to get my hands dirty"_. I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and _"sshing"_ into a Digital Ocean droplet.
