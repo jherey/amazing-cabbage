@@ -14,13 +14,18 @@ SSH stands for Secure Shell (Protocol). It's a method to achieve secure login fr
 
 \* Screenshot sshing into a server.
 
+There are two parts of an SSH key:
+
+1. Private key: it is very important that this is kept secret, it should never leave your computer. A good way to keep this safe is using a passphrase on the private key.
+2. Public key: as the name implies, this can be put anywhere. This is basically the key you put on remote servers like Digital Ocean, GitHub, AWS, etc so it knows who is talking to.
+
 
 
 ## How to get your SSH Key?
 
 On Mac and Linux, ssh is pre-installed but on Windows, you'll have to install an ssh client like [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). 
 
-\- Public key and private key
+## How it works?
 
 
 
