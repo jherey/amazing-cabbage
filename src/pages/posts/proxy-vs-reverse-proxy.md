@@ -22,7 +22,7 @@ A good example of proxies are ISPs (Internet Service Providers), when you make a
 
 # Reverse Proxy
 
-On the other hand, the client doesn't know which server it is connecting to or getting data from in reverse proxy. It is mostly used to provide for load balancing and high reliability. A reverse proxy server sits in front of one or more web servers.
+On the other hand, reverse proxy ensures that the client doesn't know which server it is connecting to or getting data from. It is mostly used to provide load balancing and high reliability. A reverse proxy server sits in front of one or more web servers.
 
 Based on whatever algorithm is used by the reverse proxy server, it selects the server to get the data from. A common algorithm is the Round Robin Algorithm (just loop through the available servers and direct requests to each individual server). These activities are internal to the system and the client won't need to bother which server is returning the data or in fact how many servers there are.
 
