@@ -57,6 +57,8 @@ This will be a high level explanation of how SSH connections work.
 * Server responds with the public key it has so the client, having the private key can verify it's the intended host.
 * If successfully verified, connection is established. 
 
+The ssh agent handles all of the authentication and the app making the request doesn't bother about it. 
+
 
 
 ## Basic SSH Commands
