@@ -16,7 +16,7 @@ A good example of proxies are ISPs (Internet Service Providers), when you make a
 
 * **Blocking unwanted sites:** ISPs use this to block some sites from being reached. This is used by the government and companies to block websites they don't want people to access. 
 * **Anonymity:** the server cannot know who's making the requests.
-* **Caching:** this can help performance as static files can be cached and sent back to clients when needed much faster.
+* **Caching:** this can help performance as static files like HTML and CSS can be cached and sent back to clients when needed much faster.
 
 
 
