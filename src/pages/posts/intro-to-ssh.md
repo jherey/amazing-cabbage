@@ -4,13 +4,15 @@ date: 2019-10-01T18:03:03.950Z
 thumb_img_path: /images/ssh.png
 template: post
 ---
-If you're one of many software developers that have come across "ssh into a server" and have no idea what that means, then this post is for you. I think other people have this experience, I'll be reading a tutorial or watching a series and the tutor just asks you to SSH into your remote server and I'm like "what does that even mean?", you'll be absolutely correct if you guessed that was the end of the tutorial for me. 
+If you're one of many software developers that have come across _"ssh into a server"_ and have no idea what that means, then this post is for you. I think other people have this experience where you'll be reading a tutorial or watching a series and the tutor tells you to SSH into your remote server and I'm like _"what does that even mean?"_, people just assume you know it. You'll be absolutely correct if you guessed that was the end of the tutorial for me. 
 
-This tutorial will try to explain what it means and why you should use it. I'll try to keep this as simple as possible so that anybody can read this and get a little grasp about what SSH means. I'll like to state that if you're looking for a deep explanation of SSH, then this post isn't for you. 
+This post will try to explain what it means and why you should use it. I'll try to keep this as simple as possible so anyone can read this and get a little grasp about what SSH means. I'll like to state that if you're looking for a deep explanation of SSH, then this post isn't for you. 
+
+
 
 ## What is SSH?
 
-SSH stands for Secure Shell (Protocol). It's a network protocol (set of rules) to achieve secure login from one computer to another (server) over an unsecured network. It enables network administrators or developers to execute shell commands on their server directly from your local computer. SSH uses the Transmission Control Protocol (TCP). TCP simply means a connection stays alive until both applications have finished exchanging data or message requests. SSH can transmit data, commands and files.
+SSH stands for Secure Shell (Protocol). It's a network protocol (set of rules) to achieve secure login from one computer to another (server) over an unsecured network. It enables network administrators or developers to execute shell commands on their server directly from a local computer. SSH uses the Transmission Control Protocol (TCP). TCP simply means a connection stays alive until both applications have finished exchanging data or message requests. SSH can transmit data, commands and files.
 
 Connections can be secured with password authentication or an asymmetrical key system i.e using private and public keys.
 
@@ -51,7 +53,7 @@ This will be a high level explanation of how SSH connections work.
 
 ![how ssh works image](/images/how_ssh_works.png)
 
-* The client sends a request (initiates a TCP connection) to a server using an IP address or public domain.
+* The client sends a request (initiates a TCP connection) to a server using an IP address or public domain (website address).
 * Server responds with the public key it has so the client, having the private key can verify it's the intended host.
 * If successfully verified, connection is established. 
 
@@ -81,7 +83,7 @@ ssh hostname command
 ```
 
 ```
-e.g ssh mysite.com ls tmp
+e.g ssh mysite.com ls <folder_name>
 ```
 
 
@@ -93,4 +95,4 @@ e.g ssh mysite.com ls tmp
 * Secure or confidential user access: a client can be assured of secured connection to a remote server even in an unsecured network.
 * **_Non-platform agnostic:_** it can be used on any major OS platform like Linux, Windows and Mac.
 
-In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, algorithm used, etc. I know many of you are anxious saying "Jerry enough of the sermon, I want to get my hands dirty". I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and "sshing" into a Digital Ocean droplet.
+In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, algorithm used, etc. I know many of you are anxious saying "Jerry enough of the sermon, I want to get my hands dirty". I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and _"sshing"_ into a Digital Ocean droplet.
