@@ -8,8 +8,6 @@ If you're one of many software developers that have come across _"ssh into a ser
 
 This post will try to explain what it means and why you should use it. I'll try to keep this as simple as possible so anyone can read this and get a little grasp of what SSH means. I'll like to state that if you're looking for a deep explanation of SSH, then this post isn't for you. 
 
-
-
 ## What is SSH?
 
 SSH stands for Secure Shell (Protocol). It's a network protocol (set of rules) to achieve secure login from one computer to another (server) over an unsecured network. It enables network administrators or developers to execute shell commands on their servers directly from a local computer. SSH uses the Transmission Control Protocol (TCP). TCP simply means a connection stays alive until both applications have finished exchanging data or message requests. SSH can transmit data, commands, and files.
@@ -18,12 +16,10 @@ Connections can be secured with password authentication or an asymmetrical key s
 
 There are two parts of an SSH key:
 
-1. **_Private key:_** it is very important that this is kept a secret, it should never leave your computer. A good way to keep this safe is by using a passphrase on the private key. The private key is used to decipher the public key.
-2. **_Public key:_** as the name implies, this is the key you copy to remote servers. The public key can only be deciphered by the private key associated with it.
+1. _**Private key:**_ it is very important that this is kept a secret, it should never leave your computer. A good way to keep this safe is by using a passphrase on the private key. The private key is used to decipher the public key.
+2. _**Public key:**_ as the name implies, this is the key you copy to remote servers. The public key can only be deciphered by the private key associated with it.
 
 From cloud services like AWS, GCP, Digital Ocean to git versioning systems like GitHub and Gitlab, ssh keys can be added to them for secured connection to deploy your applications or push your code.
-
-
 
 ## How to get your SSH Key?
 
@@ -47,8 +43,6 @@ If no key is returned, generate a new key using:
 ssh-keygen
 ```
 
-
-
 ## How it works?
 
 This will be a high level explanation of how SSH connections work.
@@ -61,8 +55,6 @@ This will be a high level explanation of how SSH connections work.
 
 The ssh-agent handles all of the authentication and the app making the request doesn't bother about it. 
 
-
-
 ## Basic SSH Commands
 
 * To connect to a server
@@ -71,6 +63,12 @@ The ssh-agent handles all of the authentication and the app making the request d
 ```
 ssh user@serverip
 ```
+
+```
+e.g ssh root@127.0.0.1
+```
+
+This means you want to login as the root user on that IP address.
 
 * Creates an ssh key pair for authentication
 
@@ -90,13 +88,11 @@ ssh hostname command
 e.g ssh mysite.com ls <folder_name>
 ```
 
-
-
 ## Why use SSH?
 
-* _**Secure File Transfer:**_ ssh allows file copying from a server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
-* **_Linux commands:_** you don't have to cram different sets of commands. One can run commands easily on your remote server like it's a local one.
+* **_Secure File Transfer:_** ssh allows file copying from a server to your local machine securely and vice versa. This is really important for secret data like login credentials, environment variables, etc.
+* _**Linux commands:**_ you don't have to cram different sets of commands. One can run commands easily on your remote server like it's a local one.
 * **Secure or confidential user access:** a client can be assured of a secured connection to a remote server even in an unsecured network.
-* **_Multiple platform support:_** it can be used on any major OS platforms like Linux, Windows, and Mac.
+* _**Multiple platform support:**_ it can be used on any major OS platforms like Linux, Windows, and Mac.
 
 In conclusion, this is just the basics as SSH is so much deeper than the explanation I've given here, I've tried to keep it as basic as possible. I'll advise you search online to further your understanding and learn how it works under the hood, the algorithm used, etc. I know many of you are anxious saying _"Jerry, enough of the sermon, I want to get my hands dirty"_. I'm begging for some patience as it'll all come together when I walk you through deploying a Node.js server and _"sshing"_ into a Digital Ocean droplet.
