@@ -41,7 +41,7 @@ If you don't know the location of your key, run:
 ssh-agent sh -c 'ssh-add; ssh-add -L'
 ```
 
-If no key is returned, generate new a new key using:
+If no key is returned, generate a new key using:
 
 ```
 ssh-keygen
