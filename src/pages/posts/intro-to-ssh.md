@@ -68,7 +68,7 @@ ssh user@serverip
 e.g ssh root@127.0.0.1
 ```
 
-This means you want to login as the root user on that IP address.
+This means you want to ssh into that IP address as the root user.
 
 * Creates an ssh key pair for authentication
 
