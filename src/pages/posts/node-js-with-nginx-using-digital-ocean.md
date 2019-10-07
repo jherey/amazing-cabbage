@@ -9,6 +9,4 @@ In this tutorial, I'll be walking you through how to deploy a Node.js app to Dig
 For this tutorial, we'll be deploying a very simple Node.js project. Here is a [link](https://github.com/jherey/basic_node_project) to the project.
 
 1. If you don't have a Digital Ocean account, simply go to [digitalocean.com](digitalocean.com) or use my [referral link](https://m.do.co/c/fdf6b4e6a1b9)  to create an account.
-2. Proceed to create a droplet. A droplet in Digital Ocean is just a server.
-
-![create_droplet_image](/images/screenshot-2019-10-07-at-11.54.45-am.png "Create droplet")
+2. Proceed to create a droplet. A droplet in Digital Ocean is just a server. I'll be using a Ubuntu server.
