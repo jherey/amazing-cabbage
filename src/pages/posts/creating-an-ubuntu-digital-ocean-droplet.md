@@ -32,4 +32,6 @@ Steps to Create a Droplet
    ![choosing an image](/images/screenshot-2019-10-08-at-11.20.30-am.png)
 4. Choosing a plan and pricing: I'll be selecting the Standard plan. If you'll be following this tutorial for learning purposes and don't need a CPU intensive and optimised server, then the Standard plan is your best bet. Also, select a pricing as small as possible so you don't use all of your credit. Here, I'm going for the $5 a month plan.
    ![](/images/screenshot-2019-10-08-at-11.32.03-am.png)
-5.
+5. Choosing a region: pick a region closest to where you are or where your users will most likely be located. It might be a small time difference but it helps to deliver data faster if you're closer to the server.
+   ![](/images/screenshot-2019-10-08-at-11.37.21-am.png)
+6.
