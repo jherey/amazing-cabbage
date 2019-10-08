@@ -16,7 +16,7 @@ Why not Heroku? Heroku is a Platform as a Service (PaaS) hosting platform that p
 
 ## What is a Droplet?
 
-_DigitalOcean Droplets are Linux-based virtual machines (VMs) that run on top of virtualized hardware. Each Droplet you create is a new server you can use, either standalone or as part of a larger, cloud-based infrastructure -_ [_digitalocean.com_](www.digitalocean.com)__
+_DigitalOcean Droplets are Linux-based virtual machines (VMs) that run on top of virtualized hardware. Each Droplet you create is a new server you can use, either standalone or as part of a larger, cloud-based infrastructure - Digital Ocean_
 
 It's basically a server one can spin up to run any project and databases. See it as an environment where you can deploy your application in.
 
@@ -24,7 +24,7 @@ It's basically a server one can spin up to run any project and databases. See it
 
 ## Steps to Create a Droplet
 
-1. Create an account on Digital Ocean from [www.digitalocean.com](www.digitalocean.com) or use my [referral link](https://m.do.co/c/fdf6b4e6a1b9) which gives you $50 in credit to run apps for two months.
+1. Create an account on Digital Ocean from [www.digitalocean.com](www.digitalocean.com) or use my [referral link](https://m.do.co/c/fdf6b4e6a1b9) which gives you $50 in credit.
 2. Click on _"New Droplet"_ or _"Create"_ on the top right and select _"Droplets"_.
 3. **Choosing an Image:** an image is a platform where we want our application to run on. Popular options are Ubuntu, Fedora, and CentOS. Explaining what these Linux servers are is beyond the scope of this tutorial.
    ![choosing an image](/images/screenshot-2019-10-08-at-11.20.30-am.png)
