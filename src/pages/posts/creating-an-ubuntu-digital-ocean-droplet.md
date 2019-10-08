@@ -34,4 +34,6 @@ Steps to Create a Droplet
    ![](/images/screenshot-2019-10-08-at-11.32.03-am.png)
 5. Choosing a region: pick a region closest to where you are or where your users will most likely be located. It might be a small time difference but it helps to deliver data faster if you're closer to the server.
    ![](/images/screenshot-2019-10-08-at-11.37.21-am.png)
-6.
+6. Authentication: I'll be using ssh to login to my DO droplet, I'll advise you do the same. If you don't know anything about ssh keys, kindly refer to a previous [post](https://jherey.netlify.com/posts/intro-to-ssh/) of mine.
+   ![authenticating with ssh](/images/screenshot-2019-10-08-at-11.56.45-am.png)
+7.
