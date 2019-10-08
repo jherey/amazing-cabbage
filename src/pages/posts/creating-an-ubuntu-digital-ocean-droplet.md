@@ -12,15 +12,11 @@ Digital Ocean (DO) is an Infrastructure as a Service (IaaS) platform. Digital Oc
 
 Why not Heroku? Heroku is a Platform as a Service (PaaS) hosting platform that provides hosting for your servers alone. Any other service an app needs like Redis, MongoDB, etc will have to be gotten from a different provider. Although it has PostgreSQL, it doesn't scale well. It's best for really small apps.
 
-
-
 ## What is a Droplet?
 
 _DigitalOcean Droplets are Linux-based virtual machines (VMs) that run on top of virtualized hardware. Each Droplet you create is a new server you can use, either standalone or as part of a larger, cloud-based infrastructure - Digital Ocean_
 
 It's basically a server one can spin up to run any project and databases. See it as an environment where you can deploy your application in.
-
-
 
 ## Steps to Create a Droplet
 
@@ -38,7 +34,7 @@ It's basically a server one can spin up to run any project and databases. See it
    ![choosing an hostname](/images/screenshot-2019-10-08-at-1.11.42-pm.png)
 8. Finally click on _"Create Droplet"_.
 
-You'll be redirected to the projects page where you should see your droplet.
+You'll be redirected to the projects page where you should see your droplet. Your droplet is live, as you can see it's IP address.
 
 ![droplet created](/images/screenshot-2019-10-08-at-1.15.34-pm.png)
 
