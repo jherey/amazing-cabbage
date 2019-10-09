@@ -1,7 +1,7 @@
 ---
 title: Intro to SSH
 date: 2019-10-01T18:03:03.950Z
-thumb_img_path: /images/ssh.png
+thumb_img_path: /images/screenshot-2019-10-09-at-10.22.38-am.png
 template: post
 ---
 If you're one of many software developers that have come across _"ssh into a server"_ and have no idea what that means, then this post is for you. I think other people have this experience where you'll be reading a tutorial or watching a series and the tutor tells you to SSH into your remote server and I'm like _"what does that even mean?"_, people just assume you know it. You'll be absolutely correct if you guessed that was the end of the tutorial for me. 
