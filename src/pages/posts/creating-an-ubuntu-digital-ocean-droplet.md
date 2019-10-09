@@ -16,7 +16,7 @@ Why not Heroku? Heroku is a Platform as a Service (PaaS) hosting platform that p
 
 _DigitalOcean Droplets are Linux-based virtual machines (VMs) that run on top of virtualized hardware. Each Droplet you create is a new server you can use, either standalone or as part of a larger, cloud-based infrastructure - Digital Ocean_
 
-It's basically a server one can spin up to run any project and databases. See it as an environment where you can deploy your application in.
+It's basically a server one can spin up to run a project or database. See it as an environment where you can deploy your application in.
 
 ## Steps to Create a Droplet
 
