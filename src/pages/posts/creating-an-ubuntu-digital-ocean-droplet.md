@@ -1,7 +1,7 @@
 ---
-title: Creating an Ubuntu Digital Ocean Droplet
+title: Creating a Ubuntu Digital Ocean Droplet
 date: 2019-10-08T09:24:51.308Z
-thumb_img_path: /images/do.png
+thumb_img_path: /images/514101-digitalocean-logo.jpg
 template: post
 ---
 ## **Why Digital Ocean?**
