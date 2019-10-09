@@ -23,7 +23,8 @@ It's basically a server one can spin up to run a project or database. See it as 
 1. Create an account on Digital Ocean from [www.digitalocean.com](www.digitalocean.com) or use my [referral link](https://m.do.co/c/fdf6b4e6a1b9) which gives you $50 in credit.
 2. Click on _"New Droplet"_ or _"Create"_ on the top right and select _"Droplets"_.
 3. **Choosing an Image:** an image is a platform where we want our application to run on. Popular options are Ubuntu, Fedora, and CentOS. Explaining what these Linux servers are is beyond the scope of this tutorial.
-   ![choosing an image](/images/screenshot-2019-10-08-at-11.20.30-am.png)
+
+   ![](/images/screenshot-2019-10-08-at-11.20.30-am.png)
 4. **Choosing a plan and pricing:** I'll be selecting the _"Standard"_ plan. If you'll be following this tutorial for learning purposes and don't need a CPU intensive and optimized server, then the Standard plan is your best bet. Also, select a price as small as possible so you don't use all of your credit. Here, I'm going for the $5 per month plan.
    ![](/images/screenshot-2019-10-08-at-11.32.03-am.png)
 5. **Choosing a region:** pick a region closest to where you are or where your users will most likely be located. It might be a small-time difference but it helps to deliver data faster if you're closer to the server.
