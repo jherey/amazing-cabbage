@@ -133,3 +133,22 @@ nginx -t # Verify if your config is correctservice nginx restart # restart nginx
 ![creating a record](/images/screenshot-2019-10-11-at-6.57.43-pm.png)
 
  Proceed to your domain service provider to add the DNS provided by Digital Ocean; **_ns1.digitalocean.com, ns2.digitalocean.com, ns3.digitalocean.com._**
+
+**__**\
+11. **Adding SSL Certificates:** 
+
+```
+add-apt-repository ppa:certbot/certbot
+```
+
+```
+apt-get update
+```
+
+```
+apt-get install python-certbot-nginx
+```
+
+```
+certbot --nginx -d yourdomain.com -d www.yourdomain.com
+```
