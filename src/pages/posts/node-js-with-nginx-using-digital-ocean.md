@@ -120,10 +120,16 @@ If you've got a domain name, add it to the "_server_name"_ field. This will look
 
 `server_name jeremiaholufayo.com www.jeremiaholufayo.com`
 
+Exit by pressing _Ctrl + X_ and then _Enter_ on Mac.
+
 ![](/images/screenshot-2019-10-11-at-6.09.13-pm.png)
 
-1. \
-   Verify if your config is correct by running:\
-   nginx -t\
-   service nginx restart # restart nginx to use new data
-2.
+```
+nginx -t # Verify if your config is correctservice nginx restart # restart nginx to use new data
+```
+
+10. **Add Domain to Digital Ocean:** if you've got a domain, you'll need to add it by clicking on the Networking button by the left tab. Add your domain, then go ahead to create the record
+
+![creating a record](/images/screenshot-2019-10-11-at-6.57.43-pm.png)
+
+ Proceed to your domain service provider to add the DNS provided by Digital Ocean; **_ns1.digitalocean.com, ns2.digitalocean.com, ns3.digitalocean.com._**
