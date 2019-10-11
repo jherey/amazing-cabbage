@@ -21,7 +21,7 @@ You'll be asked to confirm your connection, type **_"yes"_**.
 
 ![ssh into droplet](/images/screenshot-2019-10-11-at-3.40.49-pm.png)
 
-3. **Creating a new user:** for big, real world applications, I'll advise you create a new user and even delete the root user. I'll be using the root user as this is just a simple tutorial.
+3. **Creating a new user:** for big, real world applications, I'll advise you create a new user and even delete the root user for security reasons, so no one will have root access to your server. I'll be using the root user as this is just a simple tutorial.
 
 4. **Update packages:** since it's a fresh ubuntu server, we'll need to update the packages.
 
