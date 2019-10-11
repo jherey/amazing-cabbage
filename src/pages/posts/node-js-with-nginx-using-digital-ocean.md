@@ -15,3 +15,9 @@ In this tutorial, I'll be walking you through how to deploy a Node.js app to Dig
 3. Update the ubuntu packages by running:\
    `apt update`\
    If you're using non-root user, remember you'll run the command with `sudo`.
+4. Then we install Node in our server.\
+   Firstly, get the latest version of Node.js by running \
+   `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`\
+   `apt install nodejs`\
+   The first command uses curl to access the url and pipes it to bash to use the standard output. The flag -s (silent) meaning few log outputs in the console and L (location) means jump through http redirects. 
+5. ``
