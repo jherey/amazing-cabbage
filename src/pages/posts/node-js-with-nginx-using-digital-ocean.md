@@ -23,7 +23,7 @@ You'll be asked to confirm your connection, type **_"yes"_**.
 
 3. **Creating a new user:** for big, real world applications, I'll advise you create a new user and even delete the root user for security reasons, so no one will have root access to your server. I'll be using the root user as this is just a simple tutorial.
 
-4. **Update packages:** since it's a fresh ubuntu server, we'll need to update the packages.
+4. **Update packages:** since it's a new ubuntu server, we'll need to update the packages.
 
 ```
 apt update
@@ -34,14 +34,15 @@ If you're using non-root user, remember you'll run the command with `sudo`.
 5. **Install Node:** 
 
 ```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -  # get the latest version of Node.js. This uses curl to access the url and pipes it to bash to use the standard output. The flag -s (silent) allows for few log outputs in the console and L (location) jumps through http redirects. 
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ```
+
+_The command above gets the latest version of Node.js. This uses curl to access the url and pipes it to bash to use the standard output. The flag -s (silent) allows for few log outputs in the console and L (location) jumps through http redirects._
 
 ```
 apt install nodejs  # install node
 ```
 
-\
 At this point you should be able to successfully check your npm and node versions.
 
 ![node version](/images/screenshot-2019-10-11-at-4.51.53-pm.png)
@@ -62,7 +63,7 @@ node index.js
 
 ![app live](/images/screenshot-2019-10-11-at-5.05.58-pm.png)
 
-7. **PM2 Setup:** We'll be adding PM2 so we can run our application as a background process, right now we can't run any commands without stopping the application, you can check pm2's docs [here](http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/).
+7. **PM2 Setup:** We'll be adding PM2 so we can run our application as a background process, right now we can't run any commands without stopping the application. You can check pm2's docs [here](http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/).
 
 ```
 npm install -g pm2 # install pm2pm2 start <entry_file> # start app
@@ -84,7 +85,7 @@ ufw enable # enable firewallufw allow ssh  # this allows the firewall accept ssh
 
 ![](/images/screenshot-2019-10-11-at-5.51.37-pm.png)
 
-9. **Setup Nginx:** Nginx is a reverse proxy web server that allows us access our app with just the IP (in my case 167.99.85.114). Http and https requests are automatically suffixed by the appropriate port i.e 80/443.
+9. **Setup Nginx:** Nginx is a reverse proxy web server that allows us access our app with just the IP (in my case 167.99.85.114) running on port 80.
 
 ```
 nano /etc/nginx/sites-available/default
@@ -125,7 +126,7 @@ Exit by pressing _Ctrl + X_ and then _Enter_ on Mac.
 ![](/images/screenshot-2019-10-11-at-6.09.13-pm.png)
 
 ```
-nginx -t # Verify if your config is correctservice nginx restart # restart nginx to use new data
+nginx -t # verify if your config is correctservice nginx restart # restart nginx to use new data
 ```
 
 10. **Add Domain to Digital Ocean:** if you've got a domain, you'll need to add it by clicking on the Networking button by the left tab. Add your domain, then go ahead to create the record
