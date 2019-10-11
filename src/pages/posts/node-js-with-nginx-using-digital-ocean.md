@@ -21,7 +21,7 @@ You'll be asked to confirm your connection, type **_"yes"_**.
 
 ![ssh into droplet](/images/screenshot-2019-10-11-at-3.40.49-pm.png)
 
-3. **Creating a new user:** for big, real world applications, I'll advise you create a new user and even delete the root user for security reasons, so no one will have root access to your server. I'll be using the root user as this is just a simple tutorial.
+3. **Creating a new user:** for big, real-world applications, I'll advise you create a new user and even delete the root user for security reasons, so no one will have root access to your server. I'll be using the root user as this is just a simple tutorial.
 
 4. **Update packages:** since it's a new ubuntu server, we'll need to update the packages.
 
@@ -37,7 +37,7 @@ If you're using non-root user, remember you'll run the command with `sudo`.
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ```
 
-_The command above gets the latest version of Node.js. This uses curl to access the url and pipes it to bash to use the standard output. The flag -s (silent) allows for few log outputs in the console and L (location) jumps through http redirects._
+_The command above gets the latest version of Node.js. This uses curl to access the URL and pipes it to bash to use the standard output. The flag -s (silent) allows for few log outputs in the console and L (location) jumps through HTTP redirects._
 
 ```
 apt install nodejs  # install node
@@ -85,7 +85,7 @@ ufw enable # enable firewallufw allow ssh  # this allows the firewall accept ssh
 
 ![](/images/screenshot-2019-10-11-at-5.51.37-pm.png)
 
-9. **Setup Nginx:** Nginx is a reverse proxy web server that allows us access our app with just the IP (in my case 167.99.85.114) running on port 80.
+9. **Setup Nginx:** Nginx is a reverse proxy web server that allows access to your app with just the IP (in my case 167.99.85.114).
 
 ```
 nano /etc/nginx/sites-available/default
@@ -133,7 +133,7 @@ nginx -t # verify if your config is correctservice nginx restart # restart nginx
 
 ![creating a record](/images/screenshot-2019-10-11-at-6.57.43-pm.png)
 
- Proceed to your domain service provider to add the DNS provided by Digital Ocean; **_ns1.digitalocean.com, ns2.digitalocean.com, ns3.digitalocean.com._**\
+Proceed to your domain service provider to add the DNS provided by Digital Ocean; **_ns1.digitalocean.com, ns2.digitalocean.com, ns3.digitalocean.com._**\
 11. **Adding SSL Certificates:** 
 
 ```
