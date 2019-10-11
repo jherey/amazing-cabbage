@@ -23,7 +23,7 @@ You'll be asked to confirm your connection, type **_"yes"_**.
 
 3. **Creating a new user:** for big, real world applications, I'll advise you create a new user and even delete the root user. I'll be using the root user as this is just a simple tutorial.
 
-4. Update packages: since it's a fresh ubuntu server, we'll need to update the packages.
+4. **Update packages:** since it's a fresh ubuntu server, we'll need to update the packages.
 
 ```
 apt update
@@ -31,21 +31,34 @@ apt update
 
 If you're using non-root user, remember you'll run the command with `sudo`.
 
-1. Then we install Node in our server.\
-   Firstly, get the latest version of Node.js by running \
-   `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`\
-   `apt install nodejs`\
-   The first command uses curl to access the url and pipes it to bash to use the standard output. The flag -s (silent) meaning few log outputs in the console and L (location) means jump through http redirects. \
-   At this point you should be able to successfully check your npm and node versions.
+5. **Install Node:** 
+
+```
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -  # get the latest version of Node.js. This uses curl to access the url and pipes it to bash to use the standard output. The flag -s (silent) allows for few log outputs in the console and L (location) jumps through http redirects. 
+```
+
+```
+apt install nodejs  # install node
+```
+
+\
+At this point you should be able to successfully check your npm and node versions.
 
 ![](/images/screenshot-2019-10-11-at-4.51.53-pm.png)
 
-1. Add project to server. You can clone your repo using ssh or https, I'll be using https as it'll get long adding GitHub ssh keys to our server. Run:\
-   git clone <project_url>
+6. **Add project to server:** You can clone your repo using ssh or https, I'll be using https as it'll get long adding GitHub ssh keys to our server.
+
+```
+git clone <project_url>
+```
 
 ![](/images/screenshot-2019-10-11-at-4.57.53-pm.png)
 
-1. At this point, you should be able to start your application and go to your browser to see it working with your server IP.
+At this point, you should be able to start your application and go to your browser to see it working with your server IP.
+
+```
+node index.js
+```
 
 ![](/images/screenshot-2019-10-11-at-5.05.58-pm.png)
 
