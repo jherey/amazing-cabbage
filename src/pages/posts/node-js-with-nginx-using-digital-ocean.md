@@ -1,6 +1,7 @@
 ---
 title: Node.js with Nginx using Digital Ocean
 date: 2019-10-11T14:31:57.858Z
+thumb_img_path: /images/screenshot-2019-10-15-at-5.27.15-pm.png
 template: post
 ---
 In this tutorial, I'll be walking you through how to deploy a Node.js app to Digital Ocean, using Nginx as a reverse proxy, using firewalls, and SSL certificates for security. I'll be deploying a very simple Node.js project ([link here](https://github.com/jherey/basic_node_project)).
