@@ -6,12 +6,11 @@ template: post
 ---
 This tutorial will be about creating an Amazon EC2 instance similar to my previous [article](https://jherey.netlify.com/posts/creating-an-ubuntu-digital-ocean-droplet/) on creating a Digital Ocean droplet.
 
-**EC2** is a virtual computing environment which provides resizable compute capacity in the cloud. It is designed to make scaling web applications easy. EC2 instances can be launched with a variety of operating systems like Ubuntu, Microsoft Server, CentOS, etc.
+**EC2** is a virtual computing environment that provides resizable compute capacity in the cloud. It is designed to make scaling web applications easy. EC2 instances can be launched with a variety of operating systems like Ubuntu, Microsoft Server, CentOS, etc.
 
 ## Steps
 
 1. Create an account or sign-in to AWS [here](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fportal.aws.amazon.com%2Fbilling%2Fsignup%2Fresume&client_id=signup).
-
 2. **Choose a region:** select a region where you want your server to be located. Regions help to optimise latency and minimise costs.
 
 ![selecting a region](/images/screenshot-2019-10-15-at-5.13.35-pm.png)
@@ -33,10 +32,8 @@ This tutorial will be about creating an Amazon EC2 instance similar to my previo
 ![select an instance type](/images/screenshot-2019-10-15-at-2.59.50-pm.png)
 
 7. **Configure Instance Details:** I'll leave it as default and use just one instance. Click _"Next: Add Storage"._
-
 8. **Storage:** this involves storage options and size for your EC2 instance. Click on "Next: Add Tags". Click on _"Next: Configure Security Group"._
-
-9. **Configure Security Group:** here we define firewalls and network settings we want on the instance. I setup ssh, http and https connections. Click on "Add rule" to add new rules. Click on _"Review and Launch"._
+9. **Configure Security Group:** here we define firewalls and network settings we want on the instance. I set up SSH, HTTP and HTTPS connections. Click on _"Add Rule"_ to add new rules. Click on _"Review and Launch"._
 
 ![setup security group](/images/screenshot-2019-10-15-at-3.15.58-pm.png)
 
@@ -52,18 +49,14 @@ This tutorial will be about creating an Amazon EC2 instance similar to my previo
 
 ![view instance](/images/screenshot-2019-10-15-at-4.24.10-pm.png)
 
-
-
 ## Connecting to your EC2 Instance
 
-* Click on _"Connect"_ so you can ssh into your EC2 instance
+* Click on _"Connect"_ so you can ssh into your EC2 instance.
 
 ![connect by ssh](/images/screenshot-2019-10-15-at-4.37.29-pm.png)
 
 * Follow the instructions and you should successfully connect to your instance.
 
 ![terminal showing ssh connection](/images/screenshot-2019-10-15-at-4.41.23-pm.png)
-
-
 
 _You can then follow my tutorial_ [_here_](https://jherey.netlify.com/posts/node-js-with-nginx-using-digital-ocean/) _if you want to deploy a Node.js application. Thanks for reading!_
