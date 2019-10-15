@@ -14,7 +14,7 @@ This tutorial will be about creating an Amazon EC2 instance similar to my previo
 
 2. **Choose a region:** select a region where you want your server to be located. Regions help to optimise latency and minimise costs.
 
-![selecting a region](/images/screenshot-2019-10-15-at-4.31.50-pm.png)
+![selecting a region](/images/screenshot-2019-10-15-at-5.13.35-pm.png)
 
 3. Click on _"Services"_ in the top-left corner and search for _"EC2"_.
 
