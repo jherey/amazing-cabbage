@@ -6,64 +6,64 @@ template: post
 ---
 This tutorial will be about creating an Amazon EC2 instance similar to my previous [article](https://jherey.netlify.com/posts/creating-an-ubuntu-digital-ocean-droplet/) on creating a Digital Ocean droplet.
 
-EC2 is a virtual computing environment which provides resizable compute capacity in the cloud. It is designed to make scaling web applications easy. EC2 instances can be launched with a variety of operating systems like Ubuntu, Microsoft Server, CentOS, etc.
+**EC2** is a virtual computing environment which provides resizable compute capacity in the cloud. It is designed to make scaling web applications easy. EC2 instances can be launched with a variety of operating systems like Ubuntu, Microsoft Server, CentOS, etc.
 
-Steps
+## Steps
 
-Create an account or sign-in to AWS.
+1. Create an account or sign-in to AWS [here](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fportal.aws.amazon.com%2Fbilling%2Fsignup%2Fresume&client_id=signup).
 
-Select a region where you want your server to be located. Regions help to optimise latency and minimise costs.
+2. **Choose a region:** select a region where you want your server to be located. Regions help to optimise latency and minimise costs.
 
-![](/images/screenshot-2019-10-15-at-4.31.50-pm.png)
+![selecting a region](/images/screenshot-2019-10-15-at-4.31.50-pm.png)
 
-1. Click on "Services" in the top-left corner and search for "EC2"
+3. Click on _"Services"_ in the top-left corner and search for _"EC2"_.
 
-![](/images/screenshot-2019-10-15-at-2.31.39-pm.png)
+![selecting EC2](/images/screenshot-2019-10-15-at-2.31.39-pm.png)
 
-Create an instance
+4. **Create an instance**
 
-![](/images/screenshot-2019-10-15-at-2.46.36-pm.png)
+![creating an instance](/images/screenshot-2019-10-15-at-2.46.36-pm.png)
 
-Choose an Amazon Machine Image (AMI): the Amazon Linux AMI is a very good option as it comes with a wide variety of installed programs like Python, Docker, etc. I'll be choosing a Ubuntu Server image as it's general purpose and goes with my other tutorial on Digital Ocean.
+5. **Choose an Amazon Machine Image (AMI):** the Amazon Linux AMI is a very good option as it comes with a wide variety of installed programs like Python, Docker, etc. I'll be choosing a Ubuntu Server image as it's general purpose and goes with my other tutorial on Digital Ocean.
 
-![](/images/screenshot-2019-10-15-at-2.57.29-pm.png)
+![ubuntu AMI](/images/screenshot-2019-10-15-at-2.57.29-pm.png)
 
-Choose an Instance Type: this involves the number of CPU, processor type and speed you want your server to run on. I'll select the default t2.micro for demo. Click on "Next: Configure Instance Details"
+6. **Choose an Instance Type:** this involves the number of CPU, processor type and speed you want your server to run on. I'll select the default t2.micro for demo. Click on _"Next: Configure Instance Details"._
 
-![](/images/screenshot-2019-10-15-at-2.59.50-pm.png)
+![select an instance type](/images/screenshot-2019-10-15-at-2.59.50-pm.png)
 
-Configure Instance Details: I'll leave it as default and use just one instance. Click "Next: Add Storage".
+7. **Configure Instance Details:** I'll leave it as default and use just one instance. Click _"Next: Add Storage"._
 
-Storage: this involves storage options and size for your EC2 instance. Click on "Next: Add Tags". Click on "Next: Configure Security Group"
+8. **Storage:** this involves storage options and size for your EC2 instance. Click on "Next: Add Tags". Click on _"Next: Configure Security Group"._
 
-Configure Security Group: here we define firewalls and network settings we want on the instance. I setup ssh, http and https connections. Click on "Add rule" to add new rules. Click on "Review and Launch".
+9. **Configure Security Group:** here we define firewalls and network settings we want on the instance. I setup ssh, http and https connections. Click on "Add rule" to add new rules. Click on _"Review and Launch"._
 
-![](/images/screenshot-2019-10-15-at-3.15.58-pm.png)
+![setup security group](/images/screenshot-2019-10-15-at-3.15.58-pm.png)
 
-Review EC2 Instance: this is just a preview stage so you can take a final look at your instance before creation and edit if necessary. Yours should look exactly like this if you're following my steps. Click on "Launch".
+10. **Review EC2 Instance:** this is just a preview stage so you can take a final look at your instance before creation and edit if necessary. Yours should look exactly like this if you're following my steps. Click on _"Launch"._
 
-![](/images/screenshot-2019-10-15-at-3.22.10-pm.png)
+![review EC2 instance](/images/screenshot-2019-10-15-at-3.22.10-pm.png)
 
-Create SSH keys: AWS will require you to create new ssh keys or use an existing one if you have that setup. I'll be creating a new ssh key. It'll automatically download the keys to your system. Click on "Download Key Pair" after creating a key pair name.
+11. **Create SSH keys:** AWS will require you to create new ssh keys or use an existing one if you have that setup. I'll be creating a new ssh key. It'll automatically download the keys to your system. Click on _"Download Key Pair"_ after creating a key pair name.
 
-![](/images/screenshot-2019-10-15-at-4.19.05-pm.png)
+![create ssh key](/images/screenshot-2019-10-15-at-4.19.05-pm.png)
 
-Click on "Launch Instances".
+12. **Launch Instance:** click on _"Launch Instances"._ Scroll down and click on "View Instances" on the bottom right corner of the page.
 
-Scroll down and click on "View Instances" on the bottom right corner of the page.
-
-![](/images/screenshot-2019-10-15-at-4.24.10-pm.png)
-
-Connecting to your EC2 Instance
-
-Click on "Connect" so you can ssh into your ec2 instance
-
-![](/images/screenshot-2019-10-15-at-4.37.29-pm.png)
-
-Follow the instructions and you should successfully connect to your instance.
-
-![](/images/screenshot-2019-10-15-at-4.41.23-pm.png)
+![view instance](/images/screenshot-2019-10-15-at-4.24.10-pm.png)
 
 
 
-Thanks for reading!
+## Connecting to your EC2 Instance
+
+* Click on _"Connect"_ so you can ssh into your EC2 instance
+
+![connect by ssh](/images/screenshot-2019-10-15-at-4.37.29-pm.png)
+
+* Follow the instructions and you should successfully connect to your instance.
+
+![terminal showing ssh connection](/images/screenshot-2019-10-15-at-4.41.23-pm.png)
+
+
+
+_You can then follow my tutorial_ [_here_](https://jherey.netlify.com/posts/node-js-with-nginx-using-digital-ocean/) _if you want to deploy a Node.js application. Thanks for reading!_
